@@ -62,13 +62,13 @@
     </header> -->
 
     <main>
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
 
           <button class="hero-ord-bth" type="button">Order Service</button>
         </div>
-      </section> -->
+      </section>
 
       <section class="features">
         <div class="container container-feature">
@@ -92,6 +92,7 @@
                 <svg class="feature-iteam-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-clock-1"></use>
                 </svg>
+              </div>
               <h3 class="features-subtitle">Punctuality</h3>
               <p class="feature-iteam-text">
                 Bring the key message to the brand's audience for the best price
@@ -126,7 +127,7 @@
         </div>
       </section>
 
-      <!-- <section class="team">
+      <section class="team">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list list">
@@ -303,21 +304,35 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
-      <!-- <section id="made" class="made">
+      <section id="made" class="made">
         <div class="container">
           <h2 class="made-title">Our Portfolio</h2>
           <ul class="made-list list">
             <li class="made-iteam">
               <div class="made-wraper">
-                <img
-                  class="made-portfolio"
-                  src="./images/img-proj1.jpg"
-                  alt="app"
-                  width="360"
-                  height="300"
-                />
+                <picture class="made-picture">
+                  <source
+                    srcset="./images/mad-dek-1x1.jpg, images/mad-dek-2x1.jpg"
+                    media="(min-width:1440px)"
+                  />
+                  <source
+                    srcset="./images/m.jpg,images/mad-tab-2x1.jpg"
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="./images/m,images/mad-2x1.jpg"
+                    media="(max-width:767px)"
+                  />
+                  <img
+                    class="made-img"
+                    src="./images/img-proj1.jpg"
+                    alt="app"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
                 <p class="made-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -331,13 +346,27 @@
             </li>
             <li class="made-iteam">
               <div class="made-wraper">
-                <img
-                  class="made-portfolio"
-                  src="./images/img-proj2.jpg"
-                  alt="marketing"
-                  width="360"
-                  height="300"
-                />
+                <picture class="made-picture">
+                  <source
+                    srcset="./images/mad-dek-1x1.jpg, images/mad-dek-2x1.jpg"
+                    media="(min-width:1440px)"
+                  />
+                  <source
+                    srcset="./images/mad-tab-1x2.jpg,images/mad-tab-2x2.jpg"
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="./images/mad-mob-1x2.jpg,images/mad-2x2.jpg"
+                    media="(max-width:767px)"
+                  />
+                  <img
+                    class="made-img"
+                    src="./images/img-proj2.jpg"
+                    alt="marketing"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
 
                 <p class="made-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -354,13 +383,27 @@
 
             <li class="made-iteam">
               <div class="made-wraper">
-                <img
-                  class="made-portfolio"
-                  src="./images/img-proj3.jpg"
-                  alt="app"
-                  width="360"
-                  height="300"
-                />
+                <picture class="made-picture">
+                  <source
+                    srcset="./images/mad-dek-1x3.jpg, images/mad-dek-2x3.jpg"
+                    media="(min-width:1440px)"
+                  />
+                  <source
+                    srcset="./images/mad-tab-1x3.jpg,images/mad-tab-2x3.jpg"
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="./images/mad-mob-1x3.jpg,images/mad-2x3.jpg"
+                    media="(max-width:767px)"
+                  />
+                  <img
+                    class="made-img"
+                    src="./images/img-proj3.jpg"
+                    alt="app"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
                 <p class="made-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -376,7 +419,7 @@
             <li class="made-iteam">
               <div class="made-wraper">
                 <img
-                  class="made-portfolio"
+                  class="made-img"
                   src="./images/img-proj4.jpg"
                   alt="marketing"
                   width="360"
@@ -397,7 +440,7 @@
             <li class="made-iteam">
               <div class="made-wraper">
                 <img
-                  class="made-portfolio"
+                  class="made-img"
                   src="./images/img-proj5.jpg"
                   alt="design"
                   width="360"
@@ -418,7 +461,7 @@
             <li class="made-iteam">
               <div class="made-wraper">
                 <img
-                  class="made-portfolio"
+                  class="made-img"
                   src="./images/img-proj6.jpg"
                   alt="marketing"
                   width="360"
@@ -437,7 +480,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
     <!-- <footer id="footer" class="footer">
       <div class="footer-container container">
