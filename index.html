@@ -24,12 +24,19 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="header-navigation">
           <a class="header-logo" href="./index.html"
             >Web<span class="header-logo-navyblue">Studio</span>
           </a>
+          <button type="button" class="menu-open-btn">
+            <svg class="menu-icon-btn" width="24" height="24">
+              <use href="./images/icons.svg#icon-heroicons-solid_menu-1"></use>
+            </svg>
+          </button>
+        </nav>
+          
 
           <ul class="header-menu">
             <li class="header-menu-iteam">
@@ -59,7 +66,69 @@
           </ul>
         </address>
       </div>
-    </header> -->
+      <div class="mob-menu ">
+        <div>
+            <button type="button" class="menu-close-btn">X
+            <svg class="mob-btn-icon"width="24" height="24">
+          </svg>
+          </button>
+            <ul class="header-mob-menu">
+            <li class="header-mob-menu-iteam">
+              <a class="header-mob-menu-link current" href="./index.html">Studio</a>
+            </li>
+            <li class="header-mob-menu-iteam">
+              <a class="header-mob-menu-link" href="">Portfolio</a>
+            </li>
+            <li class="header-mob-menu-iteam">
+              <a class="header-mob-menu-link" href="">Contacts</a>
+            </li>
+            </ul>
+        </div>
+            <address class="mob-cont">
+          <ul class="mob-cont-list">
+            <li class="header-mob-cont-iteam">
+              <a class="header-mob-cont-iteam-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a>
+            </li>
+             <li class="header-mob-cont-iteam">
+              <a class="header-mob-cont-iteam-link"href="mailto:info@devstudio.com"
+                >info@devstudio.com</a>
+            </li>
+          </ul>
+            </address>
+            <ul class="mob-soc-list">
+              <li class="mob-social-icon">
+              <a class="mob-icon-link" href="" target="_blank">
+                <svg class="mob-new-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-social-icon">
+              <a class="mob-icon-link" href="" target="_blank">
+                <svg class="mob-new-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-social-icon">
+              <a class="mob-icon-link" href="" target="_blank">
+                <svg class="mob-new-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-social-icon">
+              <a class="mob-icon-link" href="" target="_blank">
+                <svg class="mob-new-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
+            </ul>
+            
+      </div>
+    </header>
 
     <main>
       <section class="hero">
@@ -318,11 +387,11 @@
                     media="(min-width:1440px)"
                   />
                   <source
-                    srcset="./images/m.jpg,images/mad-tab-2x1.jpg"
+                    srcset="./images\mad-tab-1x1.jpg, images\mad-tab-1x1.jpg"
                     media="(min-width:768px)"
                   />
                   <source
-                    srcset="./images/m,images/mad-2x1.jpg"
+                    srcset="./images\mad-mob-1x1.jpg, images\mad-2x1.jpg"
                     media="(max-width:767px)"
                   />
                   <img
@@ -348,15 +417,15 @@
               <div class="made-wraper">
                 <picture class="made-picture">
                   <source
-                    srcset="./images/mad-dek-1x1.jpg, images/mad-dek-2x1.jpg"
+                    srcset="./images/mad-dek-1x2.jpg, images/mad-dek-2x2.jpg"
                     media="(min-width:1440px)"
                   />
                   <source
-                    srcset="./images/mad-tab-1x2.jpg,images/mad-tab-2x2.jpg"
+                    srcset="./images/mad-tab-1x2.jpg, images/mad-tab-2x2.jpg"
                     media="(min-width:768px)"
                   />
                   <source
-                    srcset="./images/mad-mob-1x2.jpg,images/mad-2x2.jpg"
+                    srcset="./images/mad-mob-1x2.jpg, images/mad-2x2.jpg"
                     media="(max-width:767px)"
                   />
                   <img
@@ -389,11 +458,11 @@
                     media="(min-width:1440px)"
                   />
                   <source
-                    srcset="./images/mad-tab-1x3.jpg,images/mad-tab-2x3.jpg"
+                    srcset="./images/mad-tab-1x3.jpg, images/mad-tab-2x3.jpg"
                     media="(min-width:768px)"
                   />
                   <source
-                    srcset="./images/mad-mob-1x3.jpg,images/mad-2x3.jpg"
+                    srcset="./images/mad-mob-1x3.jpg, images/mad-2x3.jpg"
                     media="(max-width:767px)"
                   />
                   <img
@@ -418,13 +487,27 @@
 
             <li class="made-iteam">
               <div class="made-wraper">
-                <img
-                  class="made-img"
-                  src="./images/img-proj4.jpg"
-                  alt="marketing"
-                  width="360"
-                  height="300"
-                />
+                <picture class="made-picture">
+                  <source
+                    srcset="./images/mad-dek-1x4.jpg, images/mad-dek-2x4.jpg"
+                    media="(min-width:1440px)"
+                  />
+                  <source
+                    srcset="./images/mad-tab-1x4.jpg, images/mad-tab-2x4.jpg"
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="./images/mad-mob-1x4.jpg, images/mad-2x4.jpg"
+                    media="(max-width:767px)"
+                  />
+                  <img
+                    class="made-img"
+                    src="./images/img-proj4.jpg"
+                    alt="marketing"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
                 <p class="made-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -439,13 +522,27 @@
 
             <li class="made-iteam">
               <div class="made-wraper">
-                <img
-                  class="made-img"
-                  src="./images/img-proj5.jpg"
-                  alt="design"
-                  width="360"
-                  height="300"
-                />
+                <picture class="made-picture">
+                  <source
+                    srcset="./images/mad-dek-1x5.jpg, images/mad-dek-2x5.jpg"
+                    media="(min-width:1440px)"
+                  />
+                  <source
+                    srcset="./images/mad-tab-1x5.jpg, images/mad-tab-2x5.jpg"
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="./images/mad-mob-1x5.jpg, images/mad-2x5.jpg"
+                    media="(max-width:767px)"
+                  />
+                  <img
+                    class="made-img"
+                    src="./images/img-proj5.jpg"
+                    alt="design"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
                 <p class="made-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -460,13 +557,28 @@
 
             <li class="made-iteam">
               <div class="made-wraper">
-                <img
-                  class="made-img"
-                  src="./images/img-proj6.jpg"
-                  alt="marketing"
-                  width="360"
-                  height="300"
-                />
+                <picture class="made-picture">
+                  <source
+                    srcset="./images/mad-dek-1x6.jpg, images/mad-dek-2x6.jpg"
+                    media="(min-width:1440px)"
+                  />
+                  <source
+                    srcset="./images/mad-tab-1x6.jpg, images/mad-tab-2x6.jpg"
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="./images/mad-mob-1x6.jpg, images/mad-2x6.jpg"
+                    media="(max-width:767px)"
+                  />
+
+                  <img
+                    class="made-img"
+                    src="./images/img-proj6.jpg"
+                    alt="marketing"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
                 <p class="made-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -482,8 +594,9 @@
         </div>
       </section>
     </main>
-    <!-- <footer id="footer" class="footer">
+    <footer id="footer" class="footer">
       <div class="footer-container container">
+        
         <div class="footer-first">
           <a class="footer-logo" href="./index.html"
             >Web<span class="footer-logo-cloud">Studio</span>
@@ -544,10 +657,10 @@
               </svg>
             </button>
           </form>
-        </div>
       </div>
-    </footer> -->
-    <!-- <div class="backdrop">
+      </div>
+    </footer> 
+     <div class="backdrop">
       <div class="modal">
         <button class="modal-btn" type="button">
           <svg class="modal-btn-icon" width="8" height="8">
@@ -631,6 +744,6 @@
           <button type="submit" class="formal-modal-btn">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
   </body>
-</html>
+</html> 
