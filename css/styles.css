@@ -43,13 +43,14 @@ height: auto;}
 .container {
 
    
-     margin: 0 auto;
+    margin: auto;
     padding-left: 16px;
     padding-right: 16px;
     
 }
-.header-container {display: flex;
-   margin-left: auto;
+.header-container
+ {display: flex;
+  margin-left: auto;
 
 }
 
@@ -607,7 +608,7 @@ margin-bottom: 8px;
                align-items: baseline;
                display: flex;
                flex-wrap: wrap;
-               width: 320px;
+              
            }
     
            .footer-social {
@@ -939,6 +940,14 @@ fill:#F4F4FD; }
         max-width: 768px;
     }
     .menu-open-btn {display: none;}
+.header-menu {
+    display: block;
+    display: flex;
+
+}
+.header-container {gap: 121px;}
+.cont-tab {width: 119px;}
+
     .hero {background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url(../images/main-paige-tab.jpg);}
  
@@ -951,6 +960,9 @@ fill:#F4F4FD; }
     
               }
             }
+            
+         
+
     .hero-title {
         
         font-size: 56px;
@@ -979,6 +991,10 @@ fill:#F4F4FD; }
            .made-iteam {
                width: 356px;
            }
+           .footer-container {gap: 24px;
+        }
+     .footer-text-descr {max-width: 264px;
+    }
  
     }
     
@@ -1054,6 +1070,16 @@ width: calc((100% - 72px) / 4)
     row-gap: 48px;
     column-gap: 24px;
 }
+ .footer-container {
+     align-items: baseline;
+     display: flex;
+    }
+         .footer-first {
+             margin-right: 120px;
+         }
+                .footer-social {
+                    margin-right: 80px;
+                }
 
 }
        
